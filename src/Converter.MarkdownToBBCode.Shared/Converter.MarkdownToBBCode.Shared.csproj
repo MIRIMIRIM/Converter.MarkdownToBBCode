@@ -4,8 +4,22 @@
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
+        <Version>1.0.0</Version>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageId>Converter.MarkdownToBBCode.Shared</PackageId>
+        <PackageVersion>$(Version)</PackageVersion>
+        <Title>Markdown To BBCode Shared</Title>
+        <Authors>Aragas</Authors>
+        <Company>BUTR</Company>
+        <Description>Converts Markdown to BBCode flavor</Description>
+        <Copyright>Copyright © 2023 Bannerlord's Unofficial Tools &amp; Resources</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>markdown bbcode</PackageTags>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    </PropertyGroup>
+    
     <ItemGroup>
         <PackageReference Include="HtmlAgilityPack" Version="1.11.72" />
         <PackageReference Include="Markdig" Version="0.40.0" />
