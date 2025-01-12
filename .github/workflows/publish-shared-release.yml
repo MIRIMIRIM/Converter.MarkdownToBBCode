@@ -24,7 +24,7 @@ jobs:
         dotnet-version: '9.x'
 
     - name: Prep packages
-      run: dotnet nuget add source --username MIRIMIRIM --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/AmusementClub/index.json"
+      run: dotnet nuget add source --username MIRIMIRIM --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/MIRIMIRIM/index.json"
 
     - name: Pack the NuGet package
       run: dotnet pack src/Converter.MarkdownToBBCode.Shared/Converter.MarkdownToBBCode.Shared.csproj -c Release -o ./artifacts
