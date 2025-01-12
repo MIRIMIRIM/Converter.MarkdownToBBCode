@@ -8,13 +8,12 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <PackageId>Converter.MarkdownToBBCode.Shared</PackageId>
+        <PackageId>AC.Converter.MarkdownToBBCode.Shared</PackageId>
         <PackageVersion>$(Version)</PackageVersion>
         <Title>Markdown To BBCode Shared</Title>
-        <Authors>Aragas</Authors>
-        <Company>BUTR</Company>
-        <Description>Converts Markdown to BBCode flavor</Description>
-        <Copyright>Copyright © 2023 Bannerlord's Unofficial Tools &amp; Resources</Copyright>
+        <Authors>Aragas;MIRIMIR</Authors>
+        <Company>AmusementClub (fork from BUTR)</Company>
+        <Description>Converts Markdown to BBCode flavor. This is a fork of the original package developed by Aragas (BUTR)</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>markdown bbcode</PackageTags>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
