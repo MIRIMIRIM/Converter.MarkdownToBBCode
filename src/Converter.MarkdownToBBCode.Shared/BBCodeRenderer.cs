@@ -34,13 +34,16 @@ public class BBCodeRenderer : TextRendererBase<BBCodeRenderer>
         ObjectRenderers.Add(new HtmlBlockRenderer());
         ObjectRenderers.Add(new ParagraphRenderer());
         ObjectRenderers.Add(new QuoteBlockRenderer());
-
+        // ObjectRenderers.Add(new ThematicBreakRenderer());
+        
         // Default inline renderers
+        ObjectRenderers.Add(new AutolinkInlineRenderer());
         ObjectRenderers.Add(new CodeInlineRenderer());
+        // ObjectRenderers.Add(new DelimiterInlineRenderer());
         ObjectRenderers.Add(new EmphasisInlineRenderer());
         ObjectRenderers.Add(new LineBreakInlineRenderer());
-        //ObjectRenderers.Add(new HtmlInlineRenderer()); // Will never be processed because of ParagraphRenderer
-        //ObjectRenderers.Add(new HtmlEntityInlineRenderer());  // Will never be processed because of ParagraphRenderer
+        // ObjectRenderers.Add(new HtmlInlineRenderer()); // Will never be processed because of ParagraphRenderer
+        // ObjectRenderers.Add(new HtmlEntityInlineRenderer());  // Will never be processed because of ParagraphRenderer
         ObjectRenderers.Add(new LinkInlineRenderer());
         ObjectRenderers.Add(new LiteralInlineRenderer());
     }

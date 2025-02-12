@@ -39,4 +39,12 @@ public class TestsLink
 """;
         Assert.That(MarkdownNexusMods.ToBBCode(markdown), Is.EqualTo(bbCode));
     }
+    
+    [Test]
+    public void Converts_AutoLinkInline()
+    {
+        const string markdown = "Please visit <https://bing.com>.";
+        const string bbCode = "Please visit [url=https://bing.com]https://bing.com[/url].";
+        Assert.That(MarkdownNexusMods.ToBBCode(markdown), Is.EqualTo(bbCode));
+    }
 }
