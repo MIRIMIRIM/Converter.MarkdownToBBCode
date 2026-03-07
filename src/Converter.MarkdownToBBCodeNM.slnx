@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/root/">
+    <File Path="../README.md" />
+  </Folder>
+  <Folder Name="/root/src/">
+    <Project Path="Converter.MarkdownToBBCode.Shared/Converter.MarkdownToBBCode.Shared.csproj" />
+    <Project Path="Converter.MarkdownToBBCode.Tests/Converter.MarkdownToBBCode.Tests.csproj" />
+    <Project Path="Converter.MarkdownToBBCodeNM.Tool/Converter.MarkdownToBBCodeNM.Tool.csproj" />
+    <Project Path="Converter.MarkdownToBBCodeNM/Converter.MarkdownToBBCodeNM.csproj" />
+    <Project Path="Converter.MarkdownToBBCodeSteam.Tool/Converter.MarkdownToBBCodeSteam.Tool.csproj" />
+    <Project Path="Converter.MarkdownToBBCodeSteam/Converter.MarkdownToBBCodeSteam.csproj" />
+  </Folder>
+  <Folder Name="/root/workflows/">
+    <File Path="../.github/workflows/publish-shared-release.yml" />
+    <File Path="../.github/workflows/publish.yml" />
+  </Folder>
+</Solution>
